@@ -18,12 +18,19 @@ app.layout = html.Div([
 @app.callback(Output('page-content', 'children'), 
                 [Input('url', 'pathname')])
 def display_page(pathname):
-    if pathname == '/players':
+    if pathname == '/home':
+        pass
+    elif pathname == '/players':
         return players.layout
     elif pathname == '/team':
         return team.layout
     else:
         return players.layout
+
+
+background_styling=dict(
+
+)
 
 
 if __name__ == '__main__':

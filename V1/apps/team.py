@@ -7,9 +7,10 @@ import sys
 sys.path.append('./apps/')
 
 from components.navbar import navbar
+from components.team_graphs import team_bar_graph
 
 layout = html.Div([
     navbar,
-    html.H1('Page 2')
+    team_bar_graph
 
 ])
